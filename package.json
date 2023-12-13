@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:one": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --project=applicationOne",
+    "start:two": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --project=applicationTwo",
     "build": "ng build",
+    "build:one": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod --project=applicationOne",
+    "build:two": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod --project=applicationTwo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -23,6 +27,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.18",
     "@angular/cli": "~12.2.18",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
