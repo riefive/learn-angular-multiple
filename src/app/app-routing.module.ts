@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('projects/application-one/src/app/pages/about/about.module').then(m => m.AboutModule)
   },
   { 
+    path: 'app1/counter',
+    loadChildren: () => import('projects/application-one/src/app/pages/counter/counter.module').then(m => m.CounterModule)
+  },
+  { 
     path: 'app2/home',
     loadChildren: () => import('projects/application-two/src/app/pages/home/home.module').then(m => m.HomeModule)
   },
