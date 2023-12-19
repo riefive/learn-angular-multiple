@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:one": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --project=applicationOne",
-    "start:two": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --project=applicationTwo",
+    "start:one": "ng serve --project=applicationOne",
+    "start:two": "ng serve --project=applicationTwo",
     "build": "ng build",
-    "build:one": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod --project=applicationOne",
-    "build:two": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod --project=applicationTwo",
+    "build:one": "ng build --prod --project=applicationOne",
+    "build:two": "ng build --prod --project=applicationTwo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
