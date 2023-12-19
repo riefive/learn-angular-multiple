@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppModule as App1Module } from 'projects/application-one/src/app/app.module'
-import { AppModule as App2Module } from 'projects/application-two/src/app/app.module'
+import { AppRoutingModule } from './app-routing.module';
+import { AppChildModule as App1Module } from 'projects/application-one/src/app/app.child.module'
+import { AppChildModule as App2Module } from 'projects/application-two/src/app/app.child.module'
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AppRoutingModule,
     App1Module,
-    App2Module,
-    AppRoutingModule
+    App2Module
   ],
   providers: [],
   bootstrap: [AppComponent]
