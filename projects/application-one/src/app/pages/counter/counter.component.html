@@ -1,0 +1,8 @@
+<div class="flex flex-col justify-center items-center mt-2">
+    <div>Current Count: {{ count | async }}</div>
+    <div class="flex flex-row flex-wrap justify-center items-center gap-2 mt-2">
+        <button class="btn btn-outline btn-primary btn-sm" (click)="increment()">Increment</button>
+        <button class="btn btn-outline btn-primary btn-sm" (click)="decrement()">Decrement</button>
+        <button class="btn btn-outline btn-primary btn-sm" (click)="reset()">Reset Counter</button>
+    </div>
+</div>
