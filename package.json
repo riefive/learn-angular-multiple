@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "start:one": "ng serve --project=applicationOne",
-    "start:two": "ng serve --project=applicationTwo",
-    "build": "ng build",
-    "build:one": "ng build --prod --project=applicationOne",
-    "build:two": "ng build --prod --project=applicationTwo",
+    "start": "ng serve --project src",
+    "start:one": "ng serve --project applicationOne",
+    "start:two": "ng serve --project applicationTwo",
+    "build": "ng build --prod --project src",
+    "build:one": "ng build --prod --project applicationOne",
+    "build:two": "ng build --prod --project applicationTwo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
